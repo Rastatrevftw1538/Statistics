@@ -16,11 +16,14 @@ mydata[1:4,]
 
 mydata[5,2]
 
+crap <- table(mydata)
+prop.table(crap)
+
 c(mydata[c(3)])
 
 str(mydata)
 
-networks <- read.csv('2012Networks.CSV',header = TRUE,sep = ',')
+networks <- read.csv('StatsAssignment#2/2012Networks.CSV',header = TRUE,sep = ',')
 networks
 
 str(networks)
@@ -30,7 +33,6 @@ freq.networks
 
 
 percent.freq.networks <- prop.table(freq.networks)*100
-prop
 percent.freq.networks
 
 barplot(percent.freq.networks,main = "Bar chart of TV networks", col = '#00bd00', xlab = 'Network', ylab = 'Frequency')
